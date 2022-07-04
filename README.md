@@ -3,22 +3,26 @@
 
 Software  implementation of Crystal Edge Graph Attention Network (CEGAN) workflow that uses graph attention-based architecture to  perform multiscale classification of materials .
 
-The package provides two major functions:
-
-- Train a CGCNN model with a customized dataset.
-- Predict material properties of new crystals with a pre-trained CGCNN model.
 
 The following paper describes the details of the CGCNN framework:
+[Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties]
 
-[Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties](https://link.aps.org/doi/10.1103/PhysRevLett.120.145301)
+
+## Packege Contents
+
+- Scripts for training a CEGAN model and prediciton of classes on a validation dataset.
+- Example cases used in the paper.
+- Trained models and datasets for different classes of application in the paper.
+
+
 
 ## Table of Contents
 
 - [How to cite](#how-to-cite)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
-  - [Define a customized dataset](#define-a-customized-dataset)
-  - [Train a CGCNN model](#train-a-cgcnn-model)
+- [Setting up a model]
+  - [Settings paramaters]
+  - [Creating ](#train-a-cgcnn-model)
   - [Predict material properties with a pre-trained CGCNN model](#predict-material-properties-with-a-pre-trained-cgcnn-model)
 - [Data](#data)
 - [Authors](#authors)

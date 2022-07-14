@@ -10,7 +10,7 @@ The following paper describes the details of the CGCNN framework:
 - [Installation](#installation)
 - [Setting up a model](#Setting-up-a-model)
 	- [training a model](#training-a-model)
-	- [make predictions] (#make-predictions)
+	- [make predictions](#make-predictions)
 - [customize model parameters]
 - [Using a pre trained model]
 - [ Data availability]

@@ -129,4 +129,4 @@ write_checkpoint                 <default True>                     # Whether to
 progress                         <default True>                     # Show progress bar
 ```
 
-to use parameter values different than the default one one must spcify the parameters in seperate yaml file named as "custom_config.yaml" and the file should be in the same directory as train.py.
+to use parameter values different than the default ones, one must spcify the parameters in separate yaml file named as "custom_config.yaml" and the file should be in the same directory as train.py.

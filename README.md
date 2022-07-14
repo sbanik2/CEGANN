@@ -50,8 +50,8 @@ git clone git@github.com:sbanik2/CEGAN.git
 ```
 ## Setting up a model
 To set up 3 things are necessary.
--	1. Copy CEGAN code in the run directory.
--	2. The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, for a directory 
+-	Copy CEGAN code in the run directory.
+-	The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, a directory "Training"
 ``` 
 Training/0.POSCAR
  ```

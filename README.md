@@ -53,9 +53,9 @@ git clone git@github.com:sbanik2/CEGAN.git
 To set up 3 things are necessary.
 -	1. Copy CEGAN code in the run directory.
 -	2. The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, for a directory 
--	``` 
+``` 
 Training/0.POSCAR
- 	```
+ ```
 -	The class labels re mentioned within the POSCAR file as comments. There can be two scenaris for the (a) global classification task (b) local classification task. For the global classification only one label for the whole  structure  is required which is provided as
 ```
 0 # Class label

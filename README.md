@@ -5,7 +5,6 @@ Software  implementation of Crystal Edge Graph Attention Network (CEGAN) workflo
 
 
 The following paper describes the details of the CGCNN framework:
-[Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties]
 
 
 ## Packege Contents
@@ -18,7 +17,7 @@ The following paper describes the details of the CGCNN framework:
 
 ## Table of Contents
 
-- [How to cite](#how-to-cite)
+- [Introduction](#Introduction)
 - [Prerequisites](#prerequisites)
 - [Setting up a model]
   - [Settings paramaters]
@@ -28,7 +27,7 @@ The following paper describes the details of the CGCNN framework:
 - [Authors](#authors)
 - [License](#license)
 
-## How to cite
+## Introduction
 
 
 ##  Prerequisites
@@ -40,7 +39,6 @@ This package requires:
 - [pymatgen](pip install pymatgen==2021.2.16)
 - [pytorch-ignite](https://pytorch.org/ignite/index.html)
 
-*Note: this code is tested for PyTorch v1.0.0+ and is not compatible with versions below v0.4.0 due to some breaking changes.
 
 This creates a conda environment for running CGCNN. Before using CGCNN, activate the environment by:
 

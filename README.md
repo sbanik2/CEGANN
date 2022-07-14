@@ -94,15 +94,16 @@ python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-ch
 ### Customize model parameters
 The customizable model parameters with the default values are as follows
 ```
-search_type ["local","global"] <default “local”>                  # For the type of search
-neighbors <default 12>                                            # Number of nearest neighbors for graph construction
-rcut <default 3>                                                  # Intial cutoff for finding neighbors
-search_delta <default 1>                                          # Incerment in rcut for finding nearest neighbors
-n_classification <default 2>                                      # Number of classfication classes
-train_size <default None>                                         # Size of training data
-test_size <default None>                                          # Size of test data
-val_size <default None>                                           # Size of validation data
- train_ratio: float = 0.8
+search_type ["local","global"]   <default “local”>                  # For the type of search
+neighbors                        <default 12>                       # Number of nearest neighbors for graph construction
+rcut                             <default 3>                        # Intial cutoff for finding neighbors
+search_delta                     <default 1>                        # Incerment in rcut for finding nearest neighbors
+n_classification                 <default 2>                        # Number of classfication classes
+train_size                       <default None>                     # Size of training data
+test_size                        <default None>                     # Size of test data
+val_size                         <default None>                     # Size of validation data
+train_ratio                      <default 0.8> 
+train_ratio                    
     val_ratio: float = 0.1
     test_ratio: float = 0.1
     return_test: bool = True

@@ -39,9 +39,39 @@ First, install anaconda pacckege (https://docs.anaconda.com/anaconda/install/). 
 conda create --name cegan python=3.8
 conda activate cegan
 ```
-Now, install the packeges, E.g.,
+Now, install the packages. E.g.,
 ```
 pip install pymatgen==2021.2.16
+```pymatgen==2021.2.16
 ```
-
-
+# To install CEGAN code
+```
+git init
+git clone git@github.com:sbanik2/CEGAN.git
+```
+# setting up a model
+To set up 3 things are necessary.
+-	1. Copy CEGAN code in the run directory.
+-	2. The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, for a directory 
+-	``` 
+Training/0.POSCAR
+ 	```
+-	The class labels re mentioned within the POSCAR file as comments. There can be two scenaris for the (a) global classification task (b) local classification task. For the global classification only one label for the whole  structure  is required which is provided as
+```
+0 # Class label
+1.0
+9.758649 0.000000 0.000000
+0.000000 4.338197 0.000000
+1.739575 0.000000 9.596382
+Cu
+4
+-	```
+-	For a local level classification i.e., labels for each class
+-	```
+-	0,1,1,0 # Class label
+-	1.0
+-	9.758649 0.000000 0.000000
+-	0.000000 4.338197 0.000000
+-	1.739575 0.000000 9.596382
+-	Cu
+-	4

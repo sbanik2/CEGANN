@@ -51,9 +51,9 @@ git clone git@github.com:sbanik2/CEGAN.git
 ```
 ## Setting up a model
 
-<p align="justify">  To set up a model 3 things are necessary.
+ To set up a model 3 things are necessary.
 -	Copy CEGAN code in the run directory.
--	The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.  </p>
+-	<p align="justify"> The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.  </p>
 ``` 
 Training/0.POSCAR
  ```

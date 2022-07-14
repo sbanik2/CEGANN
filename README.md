@@ -22,3 +22,26 @@ Crystal Edge Graph Attention Network (CEGAN) [cite] workflow that uses graph att
 
 <a href="url"><img src="https://github.com/sbanik2/CEGAN/blob/main/Figs/Workflow.png" align="centre" height="600" width="1000" ></a>
 
+
+
+## Prerequisites
+This package requires:
+- [PyTorch](http://pytorch.org)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [pymatgen]( https://pymatgen.org/)
+- [pytorch-ignite](https://pytorch.org/ignite/index.html)
+
+*Note that the the code may not be compatible with recent pymatgen version. The recommended version is 2021.2.16.
+
+##installation
+First, install anaconda (https://docs.anaconda.com/anaconda/install/). Then create and activate conda environment for CEGAN using
+```
+conda create --name cegan python=3.8
+conda activate cegan
+```
+Now, install the packeges, E.g.,
+```
+pip install pymatgen==2021.2.16
+```.
+
+

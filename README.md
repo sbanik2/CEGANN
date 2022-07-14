@@ -20,6 +20,7 @@ The following paper describes the details of the CGCNN framework:
 <p align="justify"> Crystal Edge Graph Attention Network (CEGAN) [cite] workflow that uses graph attention-based architecture to learn unique feature representations and perform classification of materials belonging to different classes and scales. The edge-graph representation of the structures is passed to a Hierarchical message passing block for the convolution operations. The output of the convolved feature vectors from the edge and angle convolution layers are then passed to the aggregation block where feature representations of each of the structures are generated for the prediction task. </p>
 
 
+
 <p align="center"> <a href="url"><img src="https://github.com/sbanik2/CEGAN/blob/main/Figs/Workflow.png" align="centre" height="400" width="600" ></a> </p>
 
 
@@ -49,13 +50,14 @@ git init
 git clone git@github.com:sbanik2/CEGAN.git
 ```
 ## Setting up a model
+<p align="justify"> 
 To set up a model 3 things are necessary.
 -	Copy CEGAN code in the run directory.
 -	The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.
 ``` 
 Training/0.POSCAR
  ```
--	The class labels are mentioned within the POSCAR file as comments. There can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure  is required which is provided as
+-	The class labels are mentioned within the POSCAR file as comments. There can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure  is required which is provided as . </p>
 ```
 0 # Class label
 1.0

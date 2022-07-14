@@ -53,11 +53,11 @@ git clone git@github.com:sbanik2/CEGAN.git
 <p align="justify"> 
 To set up a model 3 things are necessary.
 -	Copy CEGAN code in the run directory.
--	The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.
+-	The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.  </p>
 ``` 
 Training/0.POSCAR
  ```
--	The class labels are mentioned within the POSCAR file as comments. There can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure  is required which is provided as . </p>
+-	The class labels are mentioned within the POSCAR file as comments. There can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure  is required which is provided as .
 ```
 0 # Class label
 1.0

@@ -33,7 +33,7 @@ This package requires:
 
 *Note that the the code may not be compatible with recent pymatgen version. The recommended version is 2021.2.16.
 
-## installation
+## Installation
 First, install anaconda pacckege (https://docs.anaconda.com/anaconda/install/). Then, create and activate a conda environment for CEGAN using
 ```
 conda create --name cegan python=3.8

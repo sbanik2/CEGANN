@@ -94,7 +94,7 @@ python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-ch
 ### Customize model parameters
 The customizable model parameters with the default values are as follows
 ```
-**search_type: ["local","global"] <default “local”> # For the type of search
+**search_type**: ["local","global"] <default “local”> # For the type of search
 **neighbors <default 12> # Number of nearest neighbors for graph construction
 rcut <default 3> # Intial cutoff for finding neighbors
 search_delta <default 1> # Incerment in rcut for finding nearest neighbors

@@ -128,3 +128,5 @@ step_size                        <default 30>                       # scheduler 
 write_checkpoint                 <default True>                     # Whether to write check point or not
 progress                         <default True>                     # Show progress bar
 ```
+
+to use parameter values different than the default one one must spcify the parameters in seperate yaml file named as "

@@ -108,22 +108,22 @@ test_ratio                       <default 0.1>
 return_test                      <default False> 
 num_workers                      <default 1> 
 pin_memory                       <default False> 
-batch_size: int = 64
-bond_fea_len: int = 80
-angle_fea_len: int = 80
-n_conv_edge: int = 3
-h_fea_edge: int = 128                
-h_fea_angle: int = 128 
-embedding : bool = False
-checkpoint_every : int = 1
-resume: bool = False
-epochs: int = 100
-optimizer: Literal["adam", "sgd"] = "adam"
-weight_decay: float = 0
-momentum: float = 0.9
-learning_rate: float = 1e-2
-scheduler: bool = True
-gamma: float = 0.1
+batch_size                       <default 64> 
+bond_fea_len                     <default 80> 
+angle_fea_len                    <default 80>
+n_conv_edge                      <default 3>
+h_fea_edge                       <default 128>           
+h_fea_angle                      <default 128>
+embedding                        <default False>
+checkpoint_every                 <default 1>
+resume                           <default False>
+epochs                           <default 100>
+optimizer: ["adam", "sgd"]       <default "adam">
+weight_decay                     <default 0>
+momentum                         <default 0.9>
+learning_rate                    <default 1e-2>
+scheduler                        <default True>
+gamma             
 step_size: int = 30
 write_checkpoint: bool = True
 progress: bool = True 

@@ -42,7 +42,6 @@ conda activate cegan
 Now, install the packages. E.g.,
 ```
 pip install pymatgen==2021.2.16
-```pymatgen==2021.2.16
 ```
 ### To install CEGAN code
 ```

@@ -8,7 +8,7 @@ The following paper describes the details of the CGCNN framework:
 - [Introduction](#Introduction)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Setting up a model](#setting up a model)
+- [Setting up a model](#setting)
 	- [training a model]
 	- [make predictions]
   - [customize model parameters]
@@ -48,7 +48,7 @@ pip install pymatgen==2021.2.16
 git init
 git clone git@github.com:sbanik2/CEGAN.git
 ```
-## setting up a model
+## setting
 To set up 3 things are necessary.
 -	1. Copy CEGAN code in the run directory.
 -	2. The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, for a directory 

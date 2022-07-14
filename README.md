@@ -96,36 +96,35 @@ The customizable model parameters with the default values are as follows
 ```
 search_type ["local","global"]   <default “local”>                  # For the type of search
 neighbors                        <default 12>                       # Number of nearest neighbors for graph construction
-rcut                             <default 3>                        # Intial cutoff for finding neighbors
+rcut                             <default 3>                        # Initial cutoff for finding neighbors
 search_delta                     <default 1>                        # Incerment in rcut for finding nearest neighbors
 n_classification                 <default 2>                        # Number of classfication classes
 train_size                       <default None>                     # Size of training data
 test_size                        <default None>                     # Size of test data
 val_size                         <default None>                     # Size of validation data
-train_ratio                      <default 0.8>                       # Trining rario
-val_ratio                        <default 0.1>                        # Validation ratio
-test_ratio                       <default 0.1>                        # test ratio
-return_test                      <default False>                      # Whether to return test loader or not
-num_workers                      <default 1>                          # Data loader option
-pin_memory                       <default False>                      #  Data loader option
-batch_size                       <default 64>                         #  Data loader option
-bond_fea_len                     <default 80>                         # Seze of the edge feature vector
-angle_fea_len                    <default 80>                         # Siz eof the angle feaure vector
-n_conv_edge                      <default 3>                          # number of edge convolution
-h_fea_edge                       <default 128>                         # Hideen fatures for edge dense layer output
-h_fea_angle                      <default 128>                          # Hideen fatures for angle dense layer output
-embedding                        <default False>                       # Wheter the predict the embeddings of the strutures or not
-checkpoint_every                 <default 1>                           # Wrie checkpoint after this many epochs
-resume                           <default False>                       # To resume search
-epochs                           <default 100>                         # number epochs
-optimizer: ["adam", "sgd"]       <default "adam">                      # optimizer option
-weight_decay                     <default 0>                            # optimizer option
-momentum                         <default 0.9>                         # optimizer option
-learning_rate                    <default 1e-2>                        # optimizer option
-scheduler                        <default True>                        # using a step learnonh rate reduction
-gamma                            <default 0.1>                         # scheduler   option
-step_size                        <default 30>                          #   scheduler   option
-write_checkpoint                 <default True>                        #  Whether to witr check point or not
-progress                         <default True>                        # Show progress bar
+train_ratio                      <default 0.8>                      # Training ratio
+val_ratio                        <default 0.1>                      # Validation ratio
+test_ratio                       <default 0.1>                      # test ratio
+return_test                      <default False>                    # Whether to return test loader or not
+num_workers                      <default 1>                        # Data loader option
+pin_memory                       <default False>                    # Data loader option
+batch_size                       <default 64>                       # Data loader option
+bond_fea_len                     <default 80>                       # Size of edge feature vector
+angle_fea_len                    <default 80>                       # Size of the angle feaure vector
+n_conv_edge                      <default 3>                        # number of edge convolution
+h_fea_edge                       <default 128>                      # Hideen features for edge dense layer output
+h_fea_angle                      <default 128>                      # Hideen features for angle dense layer output
+embedding                        <default False>                    # Whether the predict the embeddings of the strutures or not
+checkpoint_every                 <default 1>                        # Write checkpoint after this many epochs
+resume                           <default False>                    # To resume search
+epochs                           <default 100>                      # number epochs
+optimizer: ["adam", "sgd"]       <default "adam">                   # optimizer option
+weight_decay                     <default 0>                        # optimizer option
+momentum                         <default 0.9>                      # optimizer option
+learning_rate                    <default 1e-2>                     # optimizer option
+scheduler                        <default True>                     # using a step learning rate reduction
+gamma                            <default 0.1>                      # scheduler option
+step_size                        <default 30>                       # scheduler option
+write_checkpoint                 <default True>                     # Whether to write check point or not
+progress                         <default True>                     # Show progress bar
 ```
-

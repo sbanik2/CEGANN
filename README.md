@@ -44,12 +44,12 @@ Now, install the packages. E.g.,
 pip install pymatgen==2021.2.16
 ```pymatgen==2021.2.16
 ```
-# To install CEGAN code
+### To install CEGAN code
 ```
 git init
 git clone git@github.com:sbanik2/CEGAN.git
 ```
-# setting up a model
+## setting up a model
 To set up 3 things are necessary.
 -	1. Copy CEGAN code in the run directory.
 -	2. The code accepts the training data structures as POSCAR format. Create a directory containing the all the POSCAR files. The class label should me mentioned within the POSCAR file. For example, for a directory 

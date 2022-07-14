@@ -11,9 +11,9 @@ The following paper describes the details of the CGCNN framework:
 - [Setting up a model](#Setting-up-a-model)
 	- [training a model](#training-a-model)
 	- [make predictions](#make-predictions)
-- [customize model parameters]
-- [Using a pre trained model]
-- [ Data availability]
+- [Customize model parameters](#customize-model-parameters)
+- [Using a pretrained model](#using-a-pretrained-model)
+- [ Data availability] (#data-availability)
 - [License](#license)
 
 ## Introduction
@@ -90,5 +90,57 @@ python train.py <path-to-the-training-data-directory> <output-checkpoint-path> <
 To make predictions 
 ```
 python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-checkpoint-parameters>
+```
+### Customize model parameters
+The customizable model parameters with the default values are as follows
+```
+search_type: ["local","global"] <default “local”> # For the type of search
+neighbors <default 12> # Number of nearest neighbors for graph construction
+rcut <default 3> # Intial cutoff for finding neighbors
+search_delta <default 1> # Incerment in rcut for finding nearest neighbors
+n_classification <default 2> # Number of classfication classes
+train_size <default None> # Size of training data
+test_size <default None> # Size of test data
+val_size <default None> # Size of validation data
+ train_ratio: float = 0.8
+    val_ratio: float = 0.1
+    test_ratio: float = 0.1
+    return_test: bool = True
+    num_workers: int = 1
+    pin_memory: bool = False
+    batch_size: int = 64
+        
+    
+    bond_fea_len: int = 80
+    angle_fea_len: int = 80
+    n_conv_edge: int = 3
+   
+      
+    
+    h_fea_edge: int = 128                    # hidden feature len
+    h_fea_angle: int = 128 
+                                             # Number of hidden layer 
+        
+        
+    @property
+    def pooling(self):
+        return self.POOL[self.search_type]
+                  
+    embedding : bool = False
+    checkpoint_every : int = 1
+    
+        resume: bool = False
+    epochs: int = 100
+    optimizer: Literal["adam", "sgd"] = "adam"
+    weight_decay: float = 0
+    momentum: float = 0.9
+    learning_rate: float = 1e-2
+    scheduler: bool = True
+    gamma: float = 0.1
+    step_size: int = 30
+    
+
+    write_checkpoint: bool = True
+    progress: bool = True 
 ```
 

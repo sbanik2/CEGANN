@@ -1,0 +1,20 @@
+# Usage: conda env create --name cegan -f environment.yml
+
+name: cegan
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.8
+  - pip
+  # pytorch
+  - pytorch::pytorch=1.12.0
+  - pytorch::cpuonly  # - cudatoolkit=11.6
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::ignite
+  # other dependencies
+  - scikit-learn
+  - pymatgen=2021.2.16
+  - pydantic>1.8
+  - natsort

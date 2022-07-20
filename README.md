@@ -31,6 +31,9 @@ This package requires:
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [pymatgen]( https://pymatgen.org/)
 - [pytorch-ignite](https://pytorch.org/ignite/index.html)
+- [scikit-learn](https://scikit-learn.org/stable/)
+- [pydantic](https://pydantic-docs.helpmanual.io/)
+- [natsort](https://natsort.readthedocs.io/en/master/)
 
 *Note that the code may not be compatible with the recent pymatgen version. The recommended version is 2021.2.16.
 

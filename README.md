@@ -43,7 +43,7 @@ First, install the anaconda package (https://docs.anaconda.com/anaconda/install/
 conda env create --name cegan -f environment.yml
 conda activate cegan
 ```
-This will install all the prerequisites in the cgan environment
+This will also install all the prerequisites in the cegan environment.
 
 ### To install CEGAN code
 ```

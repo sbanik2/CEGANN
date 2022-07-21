@@ -40,13 +40,11 @@ This package requires:
 ## Installation
 First, install the anaconda package (https://docs.anaconda.com/anaconda/install/). Then, create and activate a Conda environment for CEGAN using
 ```
-conda create --name cegan python=3.8
+conda env create --name cegan -f environment.yml
 conda activate cegan
 ```
-Now, install the packages. E.g.,
-```
-pip install pymatgen==2021.2.16
-```
+This will install all the prerequisites in the cgan environment
+
 ### To install CEGAN code
 ```
 git init

@@ -47,7 +47,6 @@ This will also install all the prerequisites in the cegan environment.
 
 ### To install CEGAN code
 ```
-git init
 git clone git@github.com:sbanik2/CEGAN.git
 ```
 ## Setting up a model

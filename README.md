@@ -94,7 +94,7 @@ python train.py <path-to-the-training-data-directory> <output-checkpoint-path> <
 python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-checkpoint-parameters>
 
 ```
-<p align="justify">The results will be stored in “predictions.json” with the key of the dictionary as the “id” of the crystal. Model dumps two outputs in the JSON file (1)  is the embedding (2) Class label of the Structure. </p>
+<p align="justify">The results will be stored in “predictions.json” with the key of the dictionary as the “id” of the crystal. Model dumps two outputs in the JSON file (1)  is the embedding of the structures (Feature representation) (2) Class label of the Structure. </p>
 
 ### Customizable model parameters
 The model has its own default set of parameters for training and predictions.

@@ -1,6 +1,6 @@
 # CEGAN: Crystal Edge Graph Attention Network for multiscale classification of materials environment
 
-<p align="justify"> Software implementation of Crystal Edge Graph Attention Network (CEGAN) workflow that uses graph attention-based architecture to perform multiscale classification of materials. </p>
+<p align="justify"> Implementation of Crystal Edge Graph Attention Network (CEGAN) workflow that uses graph attention-based architecture to perform multiscale classification of materials. </p>
 
 The following paper describes the details of the CGCNN framework:
 
@@ -13,7 +13,7 @@ The following paper describes the details of the CGCNN framework:
 	- [make predictions](#make-predictions)
 - [Customize model parameters](#customize-model-parameters)
 - [Using a pre-trained model](#using-a-pretrained-model)
-- [Data availability] (#data-availability)
+- [Data availability](#data-availability)
 - [Citation]( #data-availability)
 - [License](#license)
 
@@ -136,8 +136,11 @@ progress                         <default True>                     # Show progr
 
 ### Using a pre-trained model
 <p align="justify"> All training data along with the pre-trained models for the classification tasks in the paper [https://doi.org/10.48550/arXiv.2207.10168] have been provided in the prediction directory. Each directory contains the training data and the validation data as “training.zip”, and “targets.zip”. The best model parameters and the custom parameters used for the training have also been provided. To make predictions on a new validation dataset copy the cegan code in the existing path. The run  </p>
+
 ```
+
 python predict.py <path-to-the-prediction-data-directory>  model_best.pt
+
 ```
 
 ### Data availability

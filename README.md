@@ -89,8 +89,10 @@ python train.py <path-to-the-training-data-directory> <output-checkpoint-path> <
 ### make predictions
 
 <p align="justify">To make predictions, all the structures should be in the id.POSCAR format. Where “id” corresponds to the crystal ids and can take any value.  Run, </p>
+
 ```
 python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-checkpoint-parameters>
+
 ```
 <p align="justify">The results will be stored in “predictions.json” with the key of the dictionary as the “id” of the crystal. Model dumps two outputs in the JSON file (1)  is the embedding (2) Class label of the Structure. </p>
 

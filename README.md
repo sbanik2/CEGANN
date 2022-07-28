@@ -12,8 +12,9 @@ The following paper describes the details of the CGCNN framework:
 	- [training a model](#training-a-model)
 	- [make predictions](#make-predictions)
 - [Customize model parameters](#customize-model-parameters)
-- [Using a pretrained model](#using-a-pretrained-model)
+- [Using a pre-trained model](#using-a-pretrained-model)
 - [Data availability] (#data-availability)
+- [Citation]( #data-availability)
 - [License](#license)
 
 ## Introduction
@@ -51,13 +52,13 @@ git clone git@github.com:sbanik2/CEGAN.git
 ```
 ## Setting up a model
 
- To set up a model 3 things are necessary.
+ To set up a model
 -	Copy CEGAN code in the run directory.
 -	<p align="justify"> The code accepts the training data structures in POSCAR format. Create a directory containing all the POSCAR files. The class label should be mentioned within the POSCAR file itself. For example, a directory "Training" will contain 0.POSCAR,1.POSCAR … etc.  </p>
 ``` 
 Training/0.POSCAR
  ```
--	<p align="justify"> The class labels are mentioned within the POSCAR file as comments. There can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure  is required which is provided as.  </p>
+-	<p align="justify"> The class labels are mentioned within the POSCAR file as comments. A script for adding class labels to POSCAR is  (Label. ipynb)  provide in the post directory. It should be noted that for multiclass classification the class labels should start from 0. For 5 class classification task,the class labels should be (0,1,2,3,4). For the classification task, there can be two scenarios. (a) global classification task (b) local classification task. For the global classification, only one label for the whole structure is required which is provided as.  </p>
 ```
 0 # Class label
 1.0
@@ -79,7 +80,7 @@ Cu
 ```
 
 ### training a model
-To train a model simply go running directory with the cegan code and use the following
+To train a model simply go to the run directory with the cegan code and use the following
 ```
 python train.py <path-to-the-training-data-directory> <output-checkpoint-path> <log-file-path>
 ```
@@ -87,12 +88,14 @@ python train.py <path-to-the-training-data-directory> <output-checkpoint-path> <
 
 ### make predictions
 
-To make predictions 
+<p align="justify">To make predictions, all the structures should be in the id.POSCAR format. Where “id” corresponds to the crystal ids and can take any value.  Run, </p>
 ```
 python predict.py <path-to-the-prediction-data-directory> <path-to-best-model-checkpoint-parameters>
 ```
-### Customize model parameters
-The customizable model parameters with the default values are as follows
+<p align="justify">The results will be stored in “predictions.json” with the key of the dictionary as the “id” of the crystal. Model dumps two outputs in the JSON file (1)  is the embedding (2) Class label of the Structure. </p>
+
+### Customizable model parameters
+The model has its own default set of parameters for training and predictions.
 ```
 search_type ["local","global"]   <default “local”>                  # For the type of search
 neighbors                        <default 12>                       # Number of nearest neighbors for graph construction
@@ -125,8 +128,33 @@ learning_rate                    <default 1e-2>                     # optimizer 
 scheduler                        <default True>                     # using a step learning rate reduction
 gamma                            <default 0.1>                      # scheduler option
 step_size                        <default 30>                       # scheduler option
-write_checkpoint                 <default True>                     # Whether to write check point or not
+write_checkpoint                 <default True>                     # Whether to write checkpoint or not
 progress                         <default True>                     # Show progress bar
 ```
 
-to use parameter values different than the default ones, one must spcify the parameters in separate yaml file named as "custom_config.yaml" and the file should be in the same directory as train.py.
+<p align="justify">To use parameter values different than the default ones, one must specify the parameters in a separate YAML file named "custom_config.yaml" and the file should be in the same directory as train.py. An example of training and prediction with the custom parameters can be found in the example directory. </p>
+
+### Using a pre-trained model
+<p align="justify"> All training data along with the pre-trained models for the classification tasks in the paper [https://doi.org/10.48550/arXiv.2207.10168] have been provided in the prediction directory. Each directory contains the training data and the validation data as “training.zip”, and “targets.zip”. The best model parameters and the custom parameters used for the training have also been provided. To make predictions on a new validation dataset copy the cegan code in the existing path. The run  </p>
+```
+python predict.py <path-to-the-prediction-data-directory>  model_best.pt
+```
+
+### Data availability
+All the datasets used for training are available in the pretrained directory of the code.
+
+### Citation
+```
+@article{banik2022cegan,
+  title={CEGAN: Crystal Edge Graph Attention Network for multiscale classification of materials environment},
+  author={Banik, Suvo and Dhabal, Debdas and Chan, Henry and Manna, Sukriti and Cherukara, Mathew and Molinero, Valeria and Sankaranarayanan, Subramanian KRS},
+  journal={arXiv preprint arXiv:2207.10168},
+  year={2022}
+}
+```
+### License
+CEGAN is licensed under the MIT License
+
+
+
+

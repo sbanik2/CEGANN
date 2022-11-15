@@ -22,7 +22,7 @@ The following paper describes the details of the CGCNN framework:
 
 
 
-<p align="center"> <a href="url"><img src="https://github.com/sbanik2/CEGAN/blob/main/Figs/2.png" align="centre" height="400" width="600" ></a> </p>
+<p align="center"> <a href="url"><img src="https://github.com/sbanik2/CEGAN/blob/main/Figs/2.jpg" align="centre" height="400" width="600" ></a> </p>
 
 
 

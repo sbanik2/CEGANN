@@ -1,6 +1,6 @@
 # CEGANN: Crystal Edge Graph Attention Neural Network 
 
-<p align="justify"> Implementation of Crystal Edge Graph Attention Network (CEGAN) workflow that uses graph attention-based architecture to perform multiscale classification of materials. </p>
+<p align="justify"> Implementation of Crystal Edge Graph Attention Neural Network (CEGANN) workflow that uses graph attention-based architecture to perform multiscale classification of materials. </p>
 
 The following paper describes the details of the CGCNN framework:
 

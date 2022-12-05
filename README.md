@@ -32,7 +32,6 @@ This package requires:
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [pymatgen]( https://pymatgen.org/)
 - [pytorch-ignite](https://pytorch.org/ignite/index.html)
-- [scikit-learn](https://scikit-learn.org/stable/)
 - [pydantic](https://pydantic-docs.helpmanual.io/)
 - [natsort](https://natsort.readthedocs.io/en/master/)
 

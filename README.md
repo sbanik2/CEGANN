@@ -18,7 +18,7 @@ The following paper describes the details of the CGCNN framework:
 - [License](#license)
 
 ## Introduction
-<p align="justify"> Crystal Edge Graph Attention Neural Network (CEGANN) [https://doi.org/10.48550/arXiv.2207.10168] workflow that uses graph attention-based architecture to learn unique feature representations and perform classification of materials belonging to different classes and scales. The edge-graph representation of the structures is passed to a Hierarchical message passing block for the convolution operations. The output of the convolved feature vectors from the edge and angle convolution layers are then passed to the aggregation block where feature representations of each of the structures are generated for the prediction task. </p>
+<p align="justify"> Crystal Edge Graph Attention Neural Network (CEGANN) (Paper)[https://doi.org/10.1038/s41524-023-00975-z] workflow that uses graph attention-based architecture to learn unique feature representations and perform classification of materials belonging to different classes and scales. The edge-graph representation of the structures is passed to a Hierarchical message passing block for the convolution operations. The output of the convolved feature vectors from the edge and angle convolution layers are then passed to the aggregation block where feature representations of each of the structures are generated for the prediction task. </p>
 
 
 
@@ -149,11 +149,15 @@ All the datasets used for training are available in the pretrained directory of 
 
 ### Citation
 ```
-@article{banik2022cegan,
-  title={CEGAN: Crystal Edge Graph Attention Network for multiscale classification of materials environment},
+@article{banik2023cegann,
+  title={CEGANN: Crystal Edge Graph Attention Neural Network for multiscale classification of materials environment},
   author={Banik, Suvo and Dhabal, Debdas and Chan, Henry and Manna, Sukriti and Cherukara, Mathew and Molinero, Valeria and Sankaranarayanan, Subramanian KRS},
-  journal={arXiv preprint arXiv:2207.10168},
-  year={2022}
+  journal={npj Computational Materials},
+  volume={9},
+  number={1},
+  pages={23},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 ### License

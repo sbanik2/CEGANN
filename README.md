@@ -136,7 +136,7 @@ progress                         <default True>                     # Show progr
 <p align="justify">To use parameter values different than the default ones, one must specify the parameters in a separate YAML file named "custom_config.yaml" and the file should be in the same directory as train.py. An example of training and prediction with the custom parameters can be found in the example directory. </p>
 
 ### Using a pre-trained model
-<p align="justify"> All training data along with the pre-trained models for the classification tasks in the paper [https://doi.org/10.48550/arXiv.2207.10168] have been provided in the prediction directory. Each directory contains the training data and the validation data as “training.zip”, and “targets.zip”. The best model parameters and the custom parameters used for the training have also been provided. To make predictions on a new validation dataset copy the cegan code in the existing path. The run  </p>
+<p align="justify"> All training data along with the pre-trained models for the classification tasks in the paper [https://doi.org/10.1038/s41524-023-00975-z] have been provided in the prediction directory. Each directory contains the training data and the validation data as “training.zip”, and “targets.zip”. The best model parameters and the custom parameters used for the training have also been provided. To make predictions on a new validation dataset copy the cegan code in the existing path. The run  </p>
 
 ```
 
@@ -149,11 +149,15 @@ All the datasets used for training are available in the pretrained directory of 
 
 ### Citation
 ```
-@article{banik2022cegan,
-  title={CEGAN: Crystal Edge Graph Attention Network for multiscale classification of materials environment},
+@article{banik2023cegann,
+  title={CEGANN: Crystal Edge Graph Attention Neural Network for multiscale classification of materials environment},
   author={Banik, Suvo and Dhabal, Debdas and Chan, Henry and Manna, Sukriti and Cherukara, Mathew and Molinero, Valeria and Sankaranarayanan, Subramanian KRS},
-  journal={arXiv preprint arXiv:2207.10168},
-  year={2022}
+  journal={npj Computational Materials},
+  volume={9},
+  number={1},
+  pages={23},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 ### License
